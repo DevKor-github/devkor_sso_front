@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loginContainer {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  & > input {
+    width: 330px;
+    height: 56.25px;
+    margin-bottom: 6.75px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #f8f8f8;
+    padding: 1rem;
+    color: #5613e8;
+
+    :focus {
+      outline: none;
+      border: 1.5px solid #5613e8;
+    }
+
+    &.t {
+      border: 1px solid #ea3535;
+    }
+  }
+
+  & > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ea3535;
+    .findpw {
+      color: #393939;
+      cursor: pointer;
+      margin-bottom: 33px;
+    }
+  }
+
+  & button {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    width: 329px;
+    height: 56px;
+    font-size: 20px;
+
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    border: none;
+
+    &.login {
+      background-color: #5613e8;
+      color: #fff;
+      line-height: normal;
+      :hover {
+        background-color: #420dc8;
+      }
+
+      :active {
+        box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    &.signup {
+      background: #ffffff;
+      color: #5613e8;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+
+      :hover {
+        border: 1px solid #5613e8;
+      }
+
+      :active {
+        box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  & .social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 137px;
+
+    & > img {
+      margin-bottom: 12px;
+    }
+  }
+}
