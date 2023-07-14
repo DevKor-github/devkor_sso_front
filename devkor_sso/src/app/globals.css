@@ -103,4 +103,17 @@
       margin-bottom: 12px;
     }
   }
+
+  .findpw {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #393939;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
